@@ -166,7 +166,5 @@ let appData = {
     savings: false,
     
 };
-// console.log(Object.keys(appData).length);
-
 
 
