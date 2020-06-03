@@ -38,8 +38,8 @@ let money, time, btnAll;;
 // };
 
 startBtn.addEventListener('click', function(){
-    time = prompt( "Введите дату в формате YYYY-MM-DD");
-    money = +prompt("ваш бюджет на месяц?", " ");
+    time = prompt( "Enter date in format YYYY-MM-DD");
+    money = +prompt("Your monthly budget?", " ");
 
     // for(i = 0; i < 3; i++ ){
     //     btnAll= document.getElementsByTagName('button')[i];
@@ -50,7 +50,7 @@ startBtn.addEventListener('click', function(){
     btnCountBudget.disabled = false;
 
     while(isNaN(money) || money == " " || money == null){
-       money = +prompt("ваш бюджет на месяц?", " ");
+       money = +prompt("Your monthly budget?", " ");
     }
     appData.budget = money;
     appData.timeData = time;
