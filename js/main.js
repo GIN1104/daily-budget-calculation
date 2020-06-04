@@ -102,16 +102,16 @@ btnCountBudget.addEventListener('click', function(){
         daybudget.textContent = appData.moneyPerDay;
 
         if(appData.moneyPerDay <= 100){
-            level.textContent = "Minimalnij uroven dostatka";
+            level.textContent =  "Minimum level of sufficiency";
         } else if(appData.moneyPerDay > 100 && appData.moneyPerDay < 2000){
-            level.textContent = "Srednij uroven dostatka";
+            level.textContent = "Middle level of sufficiency";
         } else if(appData.moneyPerDay >= 2000){
-            level.textContent = "Visokij uroven dostatka";
+            level.textContent = "High level of sufficiency";
         }else{
-            level.textContent = "Chto to poshlo ne tak!!!";
+            level.textContent = "Something went wrong!!!";
     };
 }else{
-    daybudget.textContent = "Chto to poshlo ne tak!!!";
+    daybudget.textContent = "Something went wrong!!!";
 }
 });
 
